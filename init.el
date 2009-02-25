@@ -15,6 +15,7 @@
                     (or (buffer-file-name) load-file-name)))
 
 (add-to-list 'load-path dotfiles-dir)
+(add-to-list 'load-path (concat dotfiles-dir "/plugins"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
 
@@ -31,6 +32,15 @@
 (require 'uniquify)
 (require 'ansi-color)
 (require 'recentf)
+
+;; textmate.el from topfunky (maybe works better with aquamacs?)
+(require 'textmate)
+(textmate-mode)
+;; full install of yasnippet so it's easier to add snippets
+(add-to-list 'load-path (add-to-list 'load-path (concat dotfiles-dir "plugins/yasnippet")))
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory (concat dotfiles-dir "plugins/yasnippet/snippets"))
 
 ;; this must be loaded before ELPA since it bundles its own
 ;; out-of-date js stuff. TODO: fix it to use ELPA dependencies
