@@ -1,0 +1,4 @@
+#name : <%= text_field(" ... ", " ... ") %>
+#group : rails
+# --
+<%= text_field("${object_name} ", "${method}"$0) %>

@@ -1,0 +1,4 @@
+#name : validates_uniqueness_of : ... 
+#group : validations
+# --
+validates_uniqueness_of :${attr}

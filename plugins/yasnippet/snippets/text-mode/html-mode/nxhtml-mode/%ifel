@@ -1,0 +1,7 @@
+#name : <% if  ...  -%> $. <% else -%> <% end -%>
+#group : rails
+# --
+<% if $0cond} -%>
+$0
+<% else -%>
+<% end -%>

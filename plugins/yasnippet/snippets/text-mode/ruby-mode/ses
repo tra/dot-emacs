@@ -1,0 +1,4 @@
+#name : session[: ... ]
+#group : general
+# --
+session[:${user}]

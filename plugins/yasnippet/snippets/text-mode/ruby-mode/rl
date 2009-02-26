@@ -1,0 +1,4 @@
+#name : render :layout => ' ... '
+#group : render
+# --
+render :layout => '${layoutname}'

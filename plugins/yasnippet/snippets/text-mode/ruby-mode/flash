@@ -1,0 +1,4 @@
+#name : flash[: ... ] = " ... "
+#group : general
+# --
+flash[:${notice}] = "${Text here...}"

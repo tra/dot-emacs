@@ -1,0 +1,4 @@
+#name : render_component :controller => ' ... '
+#group: render
+# --
+render_component :controller => '${items}'

@@ -1,0 +1,4 @@
+#name : <%= render(:partial => ... ) %>
+#group : rails
+# --
+<%= render(:partial => "${action}"$0 ) %>

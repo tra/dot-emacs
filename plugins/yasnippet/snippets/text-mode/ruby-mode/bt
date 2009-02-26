@@ -1,0 +1,4 @@
+#name : belongs_to : ... 
+#group : associations
+# --
+belongs_to :${class}

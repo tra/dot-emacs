@@ -1,0 +1,4 @@
+#name : validates_confirmation_of : ... 
+#group : validations
+# --
+validates_confirmation_of :${attr}

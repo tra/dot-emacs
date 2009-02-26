@@ -1,0 +1,4 @@
+#name : logger.debug " ... "
+#group : general
+# --
+logger.debug "${Text here...}"

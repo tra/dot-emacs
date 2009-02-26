@@ -1,0 +1,4 @@
+#name : logger.error " ... "
+#group : general
+# --
+logger.error "${Text here...}"

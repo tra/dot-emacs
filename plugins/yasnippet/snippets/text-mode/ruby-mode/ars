@@ -1,0 +1,4 @@
+#name : assert_response : ... 
+#group : test
+# --
+assert_response :${success}

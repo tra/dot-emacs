@@ -1,0 +1,4 @@
+#name : params[: ... ]
+#group : general
+# --
+params[:${id}]

@@ -1,4 +1,5 @@
 #contributor : Jimmy Wu <frozenthrone88@gmail.com>
 #name :<script type="text/javascript" src="..."></script> 
+#group: meta
 # --
 <script type="text/javascript" src="$1"></script>

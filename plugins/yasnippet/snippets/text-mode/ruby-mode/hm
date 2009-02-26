@@ -1,0 +1,4 @@
+#name : has_many : ... 
+#group : associations
+# --
+has_many :${class}

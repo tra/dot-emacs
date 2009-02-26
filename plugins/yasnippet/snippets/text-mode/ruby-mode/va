@@ -1,0 +1,4 @@
+#name : validates_associated : ... 
+#group : validations
+# --
+validates_associated :${attr}

@@ -1,3 +1,4 @@
 #name : <div...>...</div>
+#group : layout
 # --
 <div$1>$0</div>

@@ -1,0 +1,4 @@
+#name : render :nothing =>  ... 
+#group : render
+# --
+render :nothing => ${true}

@@ -1,0 +1,4 @@
+#name : has_one : ... 
+#group : associations
+# --
+has_one :${class}

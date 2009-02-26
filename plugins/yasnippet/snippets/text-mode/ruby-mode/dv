@@ -1,0 +1,4 @@
+#name : logger.debug "{var} = {var}.inspect}"
+#group : general
+# --
+logger.debug "${1:variable} = #{$1.inspect}"
