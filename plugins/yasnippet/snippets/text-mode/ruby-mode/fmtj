@@ -1,0 +1,8 @@
+#name : format.js render :update ...
+#group: controller
+# --
+format.js {
+  render :update do |page|
+    page << alert('${hello world}')
+  end
+}
