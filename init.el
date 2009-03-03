@@ -41,6 +41,9 @@
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
 (yas/load-directory (concat dotfiles-dir "plugins/yasnippet/snippets"))
+(require 'linum)
+(setq linum-format "%4d ")
+(global-linum-mode t)
 
 ;; this must be loaded before ELPA since it bundles its own
 ;; out-of-date js stuff. TODO: fix it to use ELPA dependencies
