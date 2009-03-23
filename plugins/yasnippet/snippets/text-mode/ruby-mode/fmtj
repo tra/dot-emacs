@@ -3,6 +3,6 @@
 # --
 format.js {
   render :update do |page|
-    page << alert('${hello world}')
+    page << "alert('${hello world}')"
   end
 }

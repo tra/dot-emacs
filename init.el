@@ -44,6 +44,10 @@
 (require 'linum)
 (setq linum-format "%4d ")
 (global-linum-mode t)
+;; in nxhtml-mode, the line numbers would switch off when going into
+;; ruby fragments because the major mode changes, this prevents that
+(add-hook 'after-change-major-mode-hook 'linum-on)
+;;(add-hook 'after-change-major-mode-hook 'font-lock-fontify-buffer)
 
 ;; this must be loaded before ELPA since it bundles its own
 ;; out-of-date js stuff. TODO: fix it to use ELPA dependencies
