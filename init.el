@@ -76,6 +76,9 @@
 
 ;; More complicated packages that haven't made it into ELPA yet
 
+;; rinari looks for sql-postgresql instead of sql-postgres
+(defalias 'sql-postgresql 'sql-postgres)
+
 (autoload 'jabber-connect "jabber" "" t)
 ;; TODO: rinari, slime
 
