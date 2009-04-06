@@ -19,11 +19,12 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(autoface-default ((t (:inherit default :background "gray2" :foreground "papaya whip" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :family "monaco"))))
  '(help-mode-default ((t (:inherit autoface-default :background "gray4"))) t)
  '(hl-line ((((class color) (background dark)) nil)))
  '(linum ((t (:background "gray" :foreground "#966"))))
- '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) (:background "gray10"))))
- '(nxhtml-mode-default ((t (:inherit nxml-mode-default :background "gray0"))) t)
- '(ruby-mode-default ((t (:inherit autoface-default :background "gray4" :foreground "gainsboro"))) t)
+ '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) (:background "gray6"))))
+ '(nxhtml-mode-default ((t (:inherit nxml-mode-default))) t)
+ '(ruby-mode-default ((t (:inherit autoface-default))) t)
  '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t)
- '(sql-interactive-mode-default ((t (:inherit autoface-default :background "DarkOrange3"))) t))
+ '(sql-interactive-mode-default ((t (:inherit autoface-default :background "gray21"))) t))
