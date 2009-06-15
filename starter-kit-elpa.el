@@ -5,7 +5,7 @@
 (defvar starter-kit-packages (list 'idle-highlight
                                    'ruby-mode
                                    'inf-ruby
-                                   'js2-mode
+                                   'javascript-mode
                                    'css-mode
                                    'nxml
                                    'gist
