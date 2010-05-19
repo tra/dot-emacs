@@ -31,8 +31,8 @@
       save-place-file (concat dotfiles-dir "places"))
 
 ;; Set this to whatever browser you use
-(setq browse-url-browser-function 'browse-url-firefox)
-;; (setq browse-url-browser-function 'browse-default-macosx-browser)
+;; (setq browse-url-browser-function 'browse-url-firefox)
+(setq browse-url-browser-function 'browse-default-macosx-browser)
 ;; (setq browse-url-browser-function 'browse-default-windows-browser)
 ;; (setq browse-url-browser-function 'browse-default-kde)
 ;; (setq browse-url-browser-function 'browse-default-epiphany)
@@ -45,9 +45,6 @@
 
 ;; Enable syntax highlighting for older Emacsen that have it off
 (global-font-lock-mode t)
-
-;; You really don't need this; trust me.
-(menu-bar-mode -1)
 
 ;; Save a list of recent files visited.
 (recentf-mode 1)
