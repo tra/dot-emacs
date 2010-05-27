@@ -10,6 +10,7 @@
  '(css-mode-indent-depth 2 t)
  '(default-frame-alist (quote ((cursor-type . box) (vertical-scroll-bars . right) (fringe) (modeline . t) (border-color . "black") (mouse-color . "black") (background-mode . dark) (tool-bar-lines . 0) (menu-bar-lines . 1) (right-fringe . 12) (left-fringe . 4) (cursor-color . "Red") (background-color . "gray4") (foreground-color . "papaya whip") (font . "-apple-Inconsolata-medium-normal-normal-*-16-*-*-*-m-0-iso10646-1") (fontsize . 0) (font-backend ns))))
  '(fill-column 100)
+ '(find-file-existing-other-name nil)
  '(global-visual-line-mode nil)
  '(javascript-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
@@ -21,6 +22,7 @@
  '(toolbar-menu-show--customize t)
  '(toolbar-menu-show--cut nil)
  '(toolbar-menu-show--paste nil)
+ '(vc-follow-symlinks nil)
  '(visual-line-mode nil t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
