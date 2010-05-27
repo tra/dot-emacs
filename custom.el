@@ -12,6 +12,7 @@
  '(fill-column 100)
  '(find-file-existing-other-name nil)
  '(global-visual-line-mode nil)
+ '(grep-find-template "find -L . <X> -type f <F> -exec grep <C> -nH -e <R> {} /dev/null \\;")
  '(javascript-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
  '(ns-tool-bar-size-mode nil t)
