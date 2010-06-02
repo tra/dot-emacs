@@ -12,6 +12,7 @@
  '(fill-column 100)
  '(global-visual-line-mode nil)
  '(javascript-indent-level 2)
+ '(js-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
  '(ns-tool-bar-size-mode nil t)
  '(show-paren-mode nil)
@@ -21,6 +22,7 @@
  '(toolbar-menu-show--customize t)
  '(toolbar-menu-show--cut nil)
  '(toolbar-menu-show--paste nil)
+ '(transient-mark-mode t)
  '(visual-line-mode nil t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
@@ -38,4 +40,5 @@
  '(hl-line ((t (:background "#212121"))))
  '(linum ((t (:background "gray" :foreground "#966"))))
  '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) (:background "gray6"))))
+ '(ruby-mode-default ((t (:inherit autoface-default :background "gray4" :foreground "gainsboro"))) t)
  '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t))
