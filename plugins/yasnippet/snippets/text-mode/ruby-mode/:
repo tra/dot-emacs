@@ -1,0 +1,4 @@
+#name : :${key} => ${value}
+#group : general
+# --
+:${key} => ${value}
