@@ -33,9 +33,6 @@
 (require 'ansi-color)
 (require 'recentf)
 
-;; textmate.el from topfunky (maybe works better with aquamacs?)
-(require 'textmate)
-(textmate-mode)
 ;; full install of yasnippet so it's easier to add snippets
 (add-to-list 'load-path (add-to-list 'load-path (concat dotfiles-dir "plugins/yasnippet")))
 (require 'yasnippet) ;; not yasnippet-bundle
@@ -96,5 +93,9 @@
 (if (file-exists-p user-specific-config) (load user-specific-config))
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
+
+;; textmate.el from topfunky (maybe works better with aquamacs?)
+;;(require 'textmate)
+(textmate-mode)
 
 ;; init.el ends here
