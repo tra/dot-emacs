@@ -19,7 +19,7 @@
  '(js-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
  '(ns-tool-bar-size-mode nil t)
- '(rinari-rgrep-file-endings "*.*")
+ '(rinari-rgrep-file-endings "*.*" t)
  '(show-paren-mode nil)
  '(standard-indent 2)
  '(tab-width 2)
@@ -36,8 +36,9 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(autoface-default ((t (:inherit default))))
- '(comint-mode-default ((t (:inherit autoface-default))) t)
+ '(comint-mode-default ((t (:inherit autoface-default :background "#8b3a3a"))) t)
  '(completion-list-mode-default ((t (:inherit autoface-default))) t)
+ '(dired-mode-default ((t (:inherit autoface-default :background "#3f3f3f"))) t)
  '(echo-area ((t (:stipple nil :strike-through nil :underline nil :slant normal :weight normal :height 150 :width normal :family "Inconsolata"))))
  '(emacs-lisp-mode-default ((t (:inherit autoface-default))) t)
  '(font-lock-constant-face ((t (:foreground "#ff4500"))))
@@ -47,4 +48,5 @@
  '(linum ((t (:background "gray" :foreground "#966"))))
  '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) (:background "gray6"))))
  '(ruby-mode-default ((t (:inherit autoface-default :background "gray4" :foreground "gainsboro"))) t)
- '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t))
+ '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t)
+ '(sql-interactive-mode-default ((t (:inherit autoface-default :background "#9f5118"))) t))
