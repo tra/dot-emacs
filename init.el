@@ -95,7 +95,7 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 ;; textmate.el from topfunky (maybe works better with aquamacs?)
-;;(require 'textmate)
+;(require 'textmate)
 (textmate-mode)
 
 ;; init.el ends here
