@@ -13,8 +13,8 @@
  '(fill-column 100)
  '(find-file-existing-other-name nil)
  '(global-visual-line-mode nil)
- '(grep-find-template "find -L . <X> -type f <F> -exec grep <C> -nH -e <R> {} /dev/null \\;")
  '(grep-find-ignored-files (quote (".#*" "*.rbc" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "*.log")))
+ '(grep-find-template "find -L . <X> -type f <F> -exec grep <C> -nH -e <R> {} /dev/null \\;")
  '(javascript-indent-level 2)
  '(js-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
@@ -28,7 +28,7 @@
  '(toolbar-menu-show--cut nil)
  '(toolbar-menu-show--paste nil)
  '(transient-mark-mode t)
- '(vc-follow-symlinks nil)
+ '(vc-follow-symlinks t)
  '(visual-line-mode nil t))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
