@@ -55,11 +55,14 @@
 ;; ido-mode is like magic pixie dust!
 (when (> emacs-major-version 21)
   (ido-mode t)
+  ;; these hacks make the ido-file loading faster/bearable when you don't type exact match
+  (require 'ido-hacks)
+  (ido-hacks-mode t)
   (setq ido-enable-prefix nil
         ido-enable-flex-matching t
         ido-create-new-buffer 'always
         ido-use-filename-at-point t
-        ido-max-prospects 10))
+        ido-max-prospects 5))
 
 (set-default 'indent-tabs-mode nil)
 (set-default 'indicate-empty-lines t)
