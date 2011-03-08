@@ -16,10 +16,12 @@
  '(global-visual-line-mode nil)
  '(grep-find-ignored-files (quote (".#*" "*.rbc" "*.o" "*~" "*.bin" "*.lbin" "*.so" "*.a" "*.ln" "*.blg" "*.bbl" "*.elc" "*.lof" "*.glo" "*.idx" "*.lot" "*.fmt" "*.tfm" "*.class" "*.fas" "*.lib" "*.mem" "*.x86f" "*.sparcf" "*.fasl" "*.ufsl" "*.fsl" "*.dxl" "*.pfsl" "*.dfsl" "*.p64fsl" "*.d64fsl" "*.dx64fsl" "*.lo" "*.la" "*.gmo" "*.mo" "*.toc" "*.aux" "*.cp" "*.fn" "*.ky" "*.pg" "*.tp" "*.vr" "*.cps" "*.fns" "*.kys" "*.pgs" "*.tps" "*.vrs" "*.pyc" "*.pyo" "*.log" "*.sql")))
  '(grep-find-template "find -L . <X> -type f <F> -exec grep <C> -nH -e <R> {} /dev/null \\;")
+ '(hippie-expand-try-functions-list (quote (try-expand-all-abbrevs try-expand-dabbrev try-expand-dabbrev-all-buffers try-expand-dabbrev-from-kill try-complete-file-name-partially try-complete-file-name try-complete-lisp-symbol-partially try-complete-lisp-symbol)))
  '(javascript-indent-level 2)
  '(js-indent-level 2)
  '(ns-tool-bar-display-mode nil t)
  '(ns-tool-bar-size-mode nil t)
+ '(org-agenda-files nil)
  '(rinari-rgrep-file-endings "*.*" t)
  '(standard-indent 2)
  '(tab-width 2)
@@ -49,17 +51,3 @@
  '(ruby-mode-default ((t (:inherit autoface-default :background "gray4" :foreground "gainsboro"))) t)
  '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t)
  '(sql-interactive-mode-default ((t (:inherit autoface-default :background "#9f5118"))) t))
-
-;; Check custom-file compatibility
-(when (and (boundp 'aquamacs-version-id)
-           (< (floor (/ aquamacs-version-id 10))
-	   (floor (/ aquamacs-customization-version-id 10))))
-  (defadvice frame-notice-user-settings (before show-version-warning activate)
-    (defvar aquamacs-backup-custom-file nil "Backup of `custom-file', if any.")
-    (setq aquamacs-backup-custom-file "/Users/tra/.emacs.d/customizations.2.0.el")
-    (let ((msg "Aquamacs options were saved by a more recent program version.
-Errors may occur.  Save Options to overwrite the customization file. The original, older customization file was backed up to /Users/tra/.emacs.d/customizations.2.0.el."))
-      (if window-system
-	  (x-popup-dialog t (list msg '("OK" . nil) 'no-cancel) "Warning")
-	(message msg)))))
-;; End compatibility check

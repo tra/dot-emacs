@@ -98,4 +98,21 @@
 ;(require 'textmate)
 (textmate-mode)
 
+(require 'org-install)
+;; Set to the location of your Org files on your local system
+(setq org-directory "~/Dropbox/org")
+;; Set to the name of the file where new mobile notes will be stored
+(setq org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
+(setq org-mobile-directory "~/Dropbox/MobileOrg")
+(setq org-agenda-files (list "~/Dropbox/org/work.org"
+                             "~/Dropbox/org/home.org"
+                             "~/Dropbox/org/squeat.org"))
+
+(setq-default show-trailing-whitespace t)
+(setq-default indicate-empty-lines t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+; indent more like javascript (avoid pushing stuff even with the left paren)
+(setq ruby-deep-indent-paren nil)
+
 ;; init.el ends here

@@ -4,6 +4,14 @@
 
 ;; TODO: switch to kbd invocations everywhere
 
+(require 'cc-cmds)
+(global-set-key (kbd "C-d") 'c-hungry-delete-forward)
+(global-set-key (kbd "DEL") 'c-hungry-delete-forward)
+(global-set-key (kbd "<backspace>") 'c-hungry-delete-backwards)
+
+(global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "C-M-o") 'other-frame)
+
 ;; You know, like Readline.
 (global-set-key "\C-\M-h" 'backward-kill-word)
 

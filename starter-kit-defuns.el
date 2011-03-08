@@ -61,6 +61,7 @@
 ;;  (pretty-lambdas)
   ;; TODO: this breaks in js2-mode!
   ;;(if (functionp 'idle-highlight) (idle-highlight))
+  (setq c-hungry-delete-key t)
   )
 
 (defun untabify-buffer ()
