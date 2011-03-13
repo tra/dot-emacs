@@ -41,6 +41,11 @@
 (require 'linum)
 (setq linum-format "%4d ")
 (global-linum-mode t)
+
+(add-to-list 'load-path (add-to-list 'load-path (concat dotfiles-dir "plugins/feature-mode")))
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
 ;; in nxhtml-mode, the line numbers would switch off when going into
 ;; ruby fragments because the major mode changes, this prevents that
 (add-hook 'after-change-major-mode-hook 'linum-on)
