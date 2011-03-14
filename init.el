@@ -120,4 +120,10 @@
 ; indent more like javascript (avoid pushing stuff even with the left paren)
 (setq ruby-deep-indent-paren nil)
 
+;; elrang stuff (assumes erlang installed via homebrew)
+(add-to-list 'load-path "/usr/local/lib/erlang/lib/tools-2.6.6.2/emacs")
+(setq erlang-root-dir "/usr/local/lib/erlang")
+(require 'erlang-start)
+(require 'erlang-flymake)
+
 ;; init.el ends here
