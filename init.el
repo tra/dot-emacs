@@ -125,5 +125,6 @@
 (setq erlang-root-dir "/usr/local/lib/erlang")
 (require 'erlang-start)
 (require 'erlang-flymake)
+(setq erlang-indent-level 2)
 
 ;; init.el ends here
