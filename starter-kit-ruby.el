@@ -6,6 +6,7 @@
   '(progn
      (require 'ruby-compilation)
      (setq ruby-use-encoding-map nil)
+     (setq ruby-insert-encoding-magic-comment nil)
      (add-hook 'ruby-mode-hook 'inf-ruby-keys)
      (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
      (define-key ruby-mode-map (kbd "C-M-h") 'backward-kill-word)
@@ -18,7 +19,10 @@
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.feature$" . ruby-mode))
+
+(add-to-list 'load-path (add-to-list 'load-path (concat dotfiles-dir "plugins/feature-mode")))
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
 
 ;; We never want to edit Rubinius bytecode
 (add-to-list 'completion-ignored-extensions ".rbc")
@@ -104,7 +108,7 @@ While ack runs asynchronously, you can use the \\[next-error] command to
 find the text that ack hits refer to. The command actually run is
 defined by the ack-command variable."
   (interactive (list (read-string "Ack for (in app root): " (thing-at-point 'symbol))))
- 
+
   (let (compile-command
         (compilation-error-regexp-alist grep-regexp-alist)
         (compilation-directory default-directory)
