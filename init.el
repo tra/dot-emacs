@@ -117,8 +117,11 @@
 (setq ruby-deep-indent-paren nil)
 
 ;; elrang stuff (assumes erlang installed via homebrew)
-(add-to-list 'load-path "/usr/local/lib/erlang/lib/tools-2.6.6.3/emacs")
+(add-to-list 'load-path "/usr/local/lib/erlang/lib/tools-2.6.6.4/emacs")
 (setq erlang-root-dir "/usr/local/lib/erlang")
+(setq erlang-compile-extra-opts
+      '((i . \"/usr/local/lib/ejabberd/include\")
+        (i . \"/usr/local/lib/erlang/lib/mysql-r13/include\")))
 (require 'erlang-start)
 (require 'erlang-flymake)
 (setq erlang-indent-level 2)
