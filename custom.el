@@ -48,6 +48,7 @@
  '(hl-line ((t (:background "#212121"))))
  '(linum ((t (:background "gray" :foreground "#966"))))
  '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) (:background "gray6"))))
+ '(nxhtml-mode-default ((t (:inherit nxml-mode-default :background "#0a0a0a"))) t)
  '(ruby-mode-default ((t (:inherit autoface-default :background "gray4" :foreground "gainsboro"))) t)
  '(shell-mode-default ((t (:inherit comint-mode-default :background "dark slate gray" :foreground "papaya whip"))) t)
  '(sql-interactive-mode-default ((t (:inherit autoface-default :background "#9f5118"))) t))
